@@ -1,7 +1,7 @@
 import { API } from "../../backend";
 
 export const createOrder = (userId, token, orderData) => {
-  return fetch(`${API}/order/create/${userId}`, {
+  return fetch(`http://animekart.herokuapp.com/api/order/create/${userId}`, {
     method: "POST",
     headers: {
       Accept: "application/json",
